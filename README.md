@@ -123,18 +123,20 @@ my_Window.setTextColor("rgba(255, 0, 0, 1)");
 // Defining an inheritance of MIST_Window class for making window
 const my_Window = new MIST_Window("my quite Window", 300, 200); // This will create a window with title my quite Window and width of 300 pixels and height of 200 pixels
 
-// Setting the text color of window
+// getting the root access of the window
 var window_id = my_Window.getHtmlId();// window_id contains the root access of the window
 ```
 
 
-### MIST_Mirror_Window (Class)
+## MIST_Mirror_Window (Class)
 
 <code>MIST_Mirror_Window</code> class takes 4 arguments for getting the information about <code>window</code> to create on your app which renders other <code>html files</code>, Those 4 arguments are <code>title, width, height, contentUrl</code>. <code>title</code> will asssign the title for your window and <code>width,height</code> will assign the width and height for your window and <code>contentUrl</code> assssigns the html file path for rendering an webpage it could be an online website url or an local file path.
 
 <b>Example</b>
 
 ```javascript
-// Defining an inheritance of MIST_Window class for making window
+// Defining an inheritance of MIST_Mirror_Window class for making window
 const my_Window = new MIST_Mirror_Window("my quite Window", 300, 200, "your html file path or any webssite url"); // This will create a window with title my quite Window and width of 300 pixels and height of 200 pixels and render the assined file path
 ```
+
+<p style="background-color: orange;color: black;">Note: MIST_Mirror_Window doesnot contains any standard methods like MIST_Window contains but this only contains getHtmlId() for providing the root accesss of Mirror Window</p>
