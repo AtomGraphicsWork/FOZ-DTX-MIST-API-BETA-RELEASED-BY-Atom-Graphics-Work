@@ -48,4 +48,4 @@ const my_Window = new MIST_Window("my quite Window", 300, 200); // This will cre
 
 ### Properties
 
-Ok congratulations if you has created your first <code>Window with</code> <b>MIST</b>, Now you will feel prety good but you must know these <code>properties<code> of the <code>window</code> you have just created othervise it's nothing for you. So let's dive into these properties , So currently <b>MIST</b> has <code>setContent(), setFont(), setBackground(), setTextColor(), getHtmlId()<code>
+Ok congratulations if you has created your first <code>Window with</code> <b>MIST</b>, Now you will feel prety good but you must know these <code>properties</code> of the <code>window</code> you have just created othervise it's nothing for you. So let's dive into these properties , So currently <b>MIST</b> has <code>setContent(), setFont(), setBackground(), setTextColor(), getHtmlId()<code>
