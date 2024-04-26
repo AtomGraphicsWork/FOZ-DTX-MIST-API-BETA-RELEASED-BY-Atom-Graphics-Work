@@ -153,7 +153,7 @@ const my_Window = new MIST_Mirror_Window("my quite Window", 300, 200, "your html
 <b>Example</b>
 ```javascript
 // Creating a Panel
-const my_Panel = new MIST_Panel("This is our nice looking Panel");// if text is written then MIST Will Ignore other arguments and set the as default
+const my_Panel = new MIST_Panel_Left("This is our nice looking Panel");// if text is written then MIST Will Ignore other arguments and set the as default
 
 // getting the root access
 /*
@@ -164,4 +164,24 @@ getHtmlId() is a global parameter which can be used with any of the MIST Compone
 */
 var my_Panel_root = my_Panel.getHtmlId();
 ```
+
+
+## Animations
+
+<b>Animations</b> are the visual effects which can't be created nor be destroyed, These can be only seen as visual effects which only appears, and <b>MIST</b> provides 3 <code>Animations</coode> which are decent for your applications and those are <code>fadeIn(), fadeOut(), pop()</code> for accessing these animation effects you need to use <code>MIST_Animation</code> class.
+
+## MIST_Animation(element) (Class)
+
+<code>MIST_Animation</code> takes only 1 argument which is the <code>HTML id</code> of the element on which you want to apply the animation and then it will return you all the 3 <code>Animations</code> of <b>MIST</b>.
+
+<b>Example</b>
+```javascript
+// creating an Animation visual effect
+const my_Animation = new MIST_Animation("id of the element which you want to animate");
+
+// Animating the element
+// my_Animation.effect(time in milisecond , function(){// action});
+my_Animation.pop(1000, function(){   alert("hy")   })
+```
+
 
