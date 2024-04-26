@@ -48,4 +48,32 @@ const my_Window = new MIST_Window("my quite Window", 300, 200); // This will cre
 
 ### Properties
 
-Ok congratulations if you has created your first <code>Window with</code> <b>MIST</b>, Now you will feel prety good but you must know these <code>properties</code> of the <code>window</code> you have just created othervise it's nothing for you. So let's dive into these properties , So currently <b>MIST</b> has <code>setContent(), setFont(), setBackground(), setTextColor(), getHtmlId()<code>
+Ok congratulations if you has created your first <code>Window with</code> <b>MIST</b>, Now you will feel prety good but you must know these <code>properties</code> of the <code>window</code> you have just created othervise it's nothing for you. So let's dive into these properties , So currently <b>MIST</b> has <code>setContent(), setFont(), setBackground(), setTextColor(), getHtmlId()<code>.
+
+### setContent(htmlContent) (Method)
+
+<code>setContent()</code> injects the <b>HTML</b> inside the <code>window</code> and this is so much important as without content you can't really do anything with <code>window</code>.
+
+<b>Example</b>
+
+```javascript
+// Defining an inheritance of MIST_Window class for making window
+const my_Window = new MIST_Window("my quite Window", 300, 200); // This will create a window with title my quite Window and width of 300 pixels and height of 200 pixels
+
+// Adding the content in the window
+my_Window.setContent("<h2>Hi there</h2><p>This is the content inside the window</p>");
+```
+
+### setFont(fontName) (Method)
+
+<code>setFont()</code> sets the <b>FONT</b> inside the <code>window</code> and this is so much important for customising the <code>window</code>. This method is so powerfull because this can add <code>css</code> fonts as well as <code>MIST FONTS</code> also, <b>MIST</b> Actually ships a lot of fonts with the package here's the list of the available <code>FONTS</code> which are shipped with current versions <code>Raleway, Exo, Oswald, Writing, Ubuntu_Mono, Ubuntu, Ubuntu_C, RobotoCondensed, RobotoCondensed_Intalic, Outdoor, Metropolis, good_times, GlacialIndifference, Coolvetica, AxelBrush</code>. You can find these fonts inside <code>mist.min.css</code> file in the root directory of package also you can use these with css also.
+
+<b>Example</b>
+
+```javascript
+// Defining an inheritance of MIST_Window class for making window
+const my_Window = new MIST_Window("my quite Window", 300, 200); // This will create a window with title my quite Window and width of 300 pixels and height of 200 pixels
+
+// Adding the content in the window
+my_Window.setFont("Exo");
+```
