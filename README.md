@@ -13,7 +13,17 @@ MIST (Modular Interactive UI Framework) is a JavaScript framework designed for b
 
 To get started with MIST, follow these steps:
 
-1. Include the MIST framework in your HTML file:
+1. Download Include the MIST framework in your HTML file:
 
    ```html
-   <script src="mist.js"></script>
+   <!-- Place the downloaded project files int the root directory of the project -->
+   <link rel="stylesheet" href="mist.min.css">
+   <script src="mist.min.js"></script>
+```
+
+2. Follow the documentation
+
+
+# Documentation
+
+## Using JavaScript for designing the UI
