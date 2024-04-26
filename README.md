@@ -140,3 +140,28 @@ const my_Window = new MIST_Mirror_Window("my quite Window", 300, 200, "your html
 ```
 
 <p style="background-color: orange;color: black;">Note: MIST_Mirror_Window doesnot contains any standard methods like MIST_Window contains but this only contains getHtmlId() for providing the root accesss of Mirror Window</p>
+
+
+## Panels 
+
+<b>Panels</b> are the ui component in <b>MIST</b> which are used to define some information of something in <b>MIST</b> Application, For creating a <b>Panel</b> in <b>MIST</b> you can use <code>MIST_Panel_Left()</code>.
+
+## MIST_Panel_Left(text, theme, padding, location) (Function)
+
+<code>MIST_Panel_Left()</code> takes 4 arguments <code>text, theme, padding, location</code> for creating a panel , <b>text</b> is the text which should be written in the <b>Panel</b>, <b>theme</b> defines the <code>rgb</code> color theme(Only takes 'red, green, blue' parameters), <b>padding</b> sets the spacing inside the <b>Panel</b>, <b>location</b> defines the location of the Panel where the <b>Panel</b> should be created (You can assign id of an element as parameter).
+
+<b>Example</b>
+```javascript
+// Creating a Panel
+const my_Panel = new MIST_Panel("This is our nice looking Panel");// if text is written then MIST Will Ignore other arguments and set the as default
+
+// getting the root access
+/*
+getHtmlId() is a global parameter which can be used with any of the MIST Component which can be created
+
+- In our case we used Panel component which can be created means we can use getHtmlId() with Panel to get it's root access
+
+*/
+var my_Panel_root = my_Panel.getHtmlId();
+```
+
