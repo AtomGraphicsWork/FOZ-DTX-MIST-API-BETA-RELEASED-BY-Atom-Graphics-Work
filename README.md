@@ -37,6 +37,15 @@ We will use JavaScript as primary language for using <b>MIST</b> because it prov
 
 ### MIST_Window (Class)
 
-'MIST_Window' class 
+<code>MIST_Window</code> class takes 3 arguments for getting the information about <code>window</code> to create on your app, Those 3 arguments are <code>title, width, height</code>. <code>title</code> will asssign the title for your window and <code>width,height</code> will assign the width and height for your window.
 
+<b>Example</b>
 
+```javascript
+// Defining an inheritance of MIST_Window class for making window
+const my_Window = new MIST_Window("my quite Window", 300, 200); // This will create a window with title my quite Window and width of 300 pixels and height of 200 pixels
+```
+
+### Properties
+
+Ok congratulations if you has created your first <code>Window with</code> <b>MIST</b>, Now you will feel prety good but you must know these <code>properties<code> of the <code>window</code> you have just created othervise it's nothing for you. So let's dive into these properties , So currently <b>MIST</b> has <code>setContent(), setFont(), setBackground(), setTextColor(), getHtmlId()<code>
