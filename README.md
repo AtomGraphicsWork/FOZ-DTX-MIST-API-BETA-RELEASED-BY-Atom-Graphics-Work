@@ -74,6 +74,67 @@ my_Window.setContent("<h2>Hi there</h2><p>This is the content inside the window<
 // Defining an inheritance of MIST_Window class for making window
 const my_Window = new MIST_Window("my quite Window", 300, 200); // This will create a window with title my quite Window and width of 300 pixels and height of 200 pixels
 
-// Adding the content in the window
+// Setting the font of window to Exo - Exo ships with MIST package and it's not a css pre installed font but after mist installation you can easily use Exo in both css and in js also.
 my_Window.setFont("Exo");
+```
+
+
+### setBackground(url) (Method)
+
+<code>setBackground()</code> sets the <b>Background Color or Image</b> of the <code>window</code> and this is so much important for customising the <code>window</code>. This method is compaitble with css color names only. But if you want to use <code>rgb</code> color codes then you can use it as a <code>string</code> like this <code>"rgba(red, green, blue, opacity)"</code>. Also you can set the image by using "url('path to image')"</code>
+
+<b>Example</b>
+
+```javascript
+// Defining an inheritance of MIST_Window class for making window
+const my_Window = new MIST_Window("my quite Window", 300, 200); // This will create a window with title my quite Window and width of 300 pixels and height of 200 pixels
+
+// Setting the background color or image of the window
+my_Window.setBackground("red");
+// or
+my_Window.setBackground("rgba(255, 0, 0, 1)");// for image use my_Window.ssetBackground("url('your image path')");
+```
+
+
+### setTextColor(color) (Method)
+
+<code>setTextColor()</code> sets the <b>Text Color</b> of the <code>window</code> and this is so much important for customising the <code>window</code>. This method is compaitble with css color names only. But if you want to use <code>rgb</code> color codes then you can use it as a <code>string</code> like this <code>"rgba(red, green, blue, opacity)"</code>.
+
+<b>Example</b>
+
+```javascript
+// Defining an inheritance of MIST_Window class for making window
+const my_Window = new MIST_Window("my quite Window", 300, 200); // This will create a window with title my quite Window and width of 300 pixels and height of 200 pixels
+
+// Setting the text color of window
+my_Window.setTextColor("red");
+// or
+my_Window.setTextColor("rgba(255, 0, 0, 1)");
+```
+
+
+### getHtmlId() (Method)
+
+<code>getHtmlId()</code> is a very powerfull and important method of the <code>MIST_Window</code> class which directly gives you the root access of the created <code>window</code> and you can use the root access to do anything with the <code>Window</code> handle this with care while using. You can use the root access of the <code>window</code> as an HTML ID and do <code>DOM</code> Manupulation with that stuff.
+
+<b>Example</b>
+
+```javascript
+// Defining an inheritance of MIST_Window class for making window
+const my_Window = new MIST_Window("my quite Window", 300, 200); // This will create a window with title my quite Window and width of 300 pixels and height of 200 pixels
+
+// Setting the text color of window
+var window_id = my_Window.getHtmlId();// window_id contains the root access of the window
+```
+
+
+### MIST_Mirror_Window (Class)
+
+<code>MIST_Mirror_Window</code> class takes 4 arguments for getting the information about <code>window</code> to create on your app which renders other <code>html files</code>, Those 4 arguments are <code>title, width, height, contentUrl</code>. <code>title</code> will asssign the title for your window and <code>width,height</code> will assign the width and height for your window and <code>contentUrl</code> assssigns the html file path for rendering an webpage it could be an online website url or an local file path.
+
+<b>Example</b>
+
+```javascript
+// Defining an inheritance of MIST_Window class for making window
+const my_Window = new MIST_Mirror_Window("my quite Window", 300, 200, "your html file path or any webssite url"); // This will create a window with title my quite Window and width of 300 pixels and height of 200 pixels and render the assined file path
 ```
