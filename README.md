@@ -31,8 +31,12 @@ To get started with MIST, follow these steps:
 
 We will use JavaScript as primary language for using <b>MIST</b> because it provides various functions and beggner friendly syntax for learning <b>MIST</b>.
 
--## Window
+## Window
 
 <b>MIST</b> provides a full fledged Independent <b>Window Manager</b> which is responsible for making the fully functional <code>windows</code> and for making the <code>windows</code> we need to actually tell <b>MIST</b> to create <code>windows</code> and for this <b>MIST</b> provides us 2 classes <code>MIST_Window</code> and <code>MIST_Mirror_Window</code>. These classes are responsible to tell <b>MIST</b> that we want to actually create <code>window</code>.
+
+### MIST_Window (Class)
+
+'MIST_Window' class 
 
 
