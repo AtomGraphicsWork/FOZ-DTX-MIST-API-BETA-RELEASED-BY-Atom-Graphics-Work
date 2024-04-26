@@ -185,3 +185,16 @@ my_Animation.pop(1000, function(){   alert("hy")   })
 ```
 
 
+## Canvas - MIST_Canvas() (Class)
+
+<b>Canvas</b> are card like component in <b>MIST</b> which are used to draw amazing and mordern <b>GUI</b> and <b>Canvas</b> are widely used in a large amount of applications, For drawing <b>Canvas MIST</b> provides <code>MIST_Canvas</code> class , this class takes <code>content, name, location</code> in which <code>content</code> defines the content of the canvas this could be the plain text or html code, <code>name</code> defines the name of the canvas (Note that the name is optional and can be directly used to get the root access of the canvas), <code>location</code> defines the location where the canvas should be created this could be the html id. Not only this but also <code>Canvas</code> can be modified through the methods which are <code>height(pixels),width(pixels),textColor(color),backgroundColor(color),backgroundImage(path),backgroundGradient('string array of colors'),font(font name),getHtmlId(),addContent(html),addBreak()</code> , the <code>height, width</code>are responsible for setting the height and width of the canvas , <code>textColor()</code> used to set the canvas text color, <code>backgroundColor, backgroundImage(), backgroundGradient()</code> are used to add the background color, image or gradient to the canvas, <code>getHtmlId()</code> provides the root access to the canvas, <code>addContent()</code> adds the html or plain text content to the canvas , <code>addBreak()</code> adds a break or empity new line to the canvass.
+
+<b>Example</b>
+
+```javascript
+// creating a canvas object
+const my_Canvas = new MIST_Canvas("Hi this is the new canvas");// after text everything is optional but if your want you can add that also
+
+// adding new content to canvas
+my_Canvas.addContent(" This is added content");
+```
