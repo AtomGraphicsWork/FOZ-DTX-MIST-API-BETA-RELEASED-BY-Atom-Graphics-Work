@@ -19,7 +19,8 @@ To get started with MIST, follow these steps:
    <!-- Place the downloaded project files int the root directory of the project -->
    <link rel="stylesheet" href="mist.min.css">
    <script src="mist.min.js"></script>
-   ```html
+   
+   ``` 
 
 2. Follow the documentation
 
