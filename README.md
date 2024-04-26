@@ -1,3 +1,3 @@
-<code>
-print("hy");
-</code>
+```cpp
+#include <iostream>
+
