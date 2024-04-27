@@ -213,4 +213,20 @@ const my_Window = new MIST_Freezed_Window("my quite Window", 300, 200); // This 
 ```
 
 
-## Document Manupulation
+# Document Manupulation in MIST
+<b>Document Manupulation in MIST</b> is important because it includes direct contect with <b>HTML Elements</b>.
+
+## MIST_Style_Element(id) (Function)
+<code>MIST_Style_Element</code> is function which takes the <b>HTML Element Id</b> for accessing the element and then it provides <code>background(color), textColor(color), height(px), width(px), paddingLeft(px), paddingRight(px), paddingTop(px), paddingBottom(px), marginLeft(px), marginRight(px), marginTop(px), marginBottom(px), dropShadow(x,y,blur)</code> these properties can be applied to the given html element id.
+
+<b>Example</b>
+```javascript
+// Accessing the element
+const elm = new MIST_Style_Element('ID of the element');
+
+// Adding styles to the element
+elm.height(70); // Setting the height
+elm.width(70); // Setting the width
+
+
+# Widgets
