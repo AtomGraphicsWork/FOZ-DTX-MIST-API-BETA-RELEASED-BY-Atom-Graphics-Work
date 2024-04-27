@@ -198,3 +198,19 @@ const my_Canvas = new MIST_Canvas("Hi this is the new canvas");// after text eve
 // adding new content to canvas
 my_Canvas.addContent(" This is added content");
 ```
+
+
+## Freezed Window 
+
+<b>Freeze Window</b> are just normal <code>MIST_Window</code> and <code>MIST_Mirror_Window</code> just these windows are freezed means they can't be moved by the user. These can be really helpfull for designing <b>layout</b> for using these you can use <code>MIST_Freezed_Window</code> and <code>MIST_Freezed_Mirror_Window</code> just use these and all the functions are same as normal <code>window</code> contains.
+
+
+<b>Example</b>
+
+```javascript
+// Defining an inheritance of MIST_Window class for making window
+const my_Window = new MIST_Freezed_Window("my quite Window", 300, 200); // This will create a window with title my quite Window and width of 300 pixels and height of 200 pixels
+```
+
+
+## Document Manupulation
