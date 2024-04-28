@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mist API DEMO APP</title>
+    <link rel="stylesheet" href="mist.min.css">
+</head>
+<body>
+    <div id="hov">
+        <!-- <textarea class="MIST-Widget-Textbox"></textarea> -->
+    </div>
+    <!-- <div class="MIST-Panel-Left">
+        You are using MIST API
+    </div> -->
+</body>
+<script src="mist.min.js"></script>
+<script>
+    //var win = new MIST_Mirror_Window("IPhone 15 PRO MAX", 400, 700, "https://fozdtx.github.io/alvax/");
+    // var win2 = new MIST_Window("Samsung s24 ultra", 300, 200);
+    // win2.setContent('<h1>Samsung</h1>');
+    // win2.setFont('Raleway');
+    // win2.setBackground('#1C1C1C');
+    // win2.setTextColor('whitesmoke');
+
+    //const tab = new MIST_MenuBar("top");
+    // const WINDOW = new MIST_Window("OpenGL - 4.6", 300, 200);
+
+    // setTimeout(function(){
+    //     WINDOW.terminateWindow();
+    // }, 3000);
+//     const panel = new MIST_Panel_Left('You are using MIST API','125, 0, 124', 10,'hov');
+//     // panel.borderColor('black');
+//     // panel.theme('255, 0, 0');
+//     // panel.text('Fatal error CPP not found');
+//     // panel.font('Oswald');
+//     // panel.setFont('Arial');
+//     // Example usage:
+// const element = document.getElementById('hov');
+// const mistAnimation = new MIST_Animation(element);
+
+// // Example fade in animation with callback
+// // mistAnimation.fadeIn(1000, () => {
+// //     mistAnimation.fadeOut(1000, function(){
+
+// //         alert('done')
+
+// //     });
+// //     console.log('in')
+// // });
+
+// mistAnimation.pop(1000, function(){
+//     // mistAnimation.fadeOut();
+// });
+
+// // Example fade out animation without callback
+
+    // const canva = MIST_Canvas('<h1>Meta</h2>');
+
+    // const win = new MIST_Window('New Window', 300, 200);
+
+    // var warning = new MIST_Panel_Left('A new pop',10, '0, 150, 0', 'hov');
+    
+    // var can = MIST_Canvas('<b>Nvm</b>', 'jkl', 'hov');
+
+    // const h = new MIST_Animation(document.getElementById('hov'));
+
+    // h.pop();
+
+    // const win = new MIST_Window('New Window', 300, 200);
+    // const win = new MIST_Freezed_Mirror_Window('hov','New Freeze', 700, 900, 'https://fozdtx.github.io/alvax/');
+
+    // const h = new MIST_Animation(document.getElementById('hov'));
+
+    // h.pop();
+    // console.log(win.getHtmlId())
+
+    // const text = new MIST_NTL_Widgets;
+
+    // var b = text.NTL_Input();
+    // var c = text.NTL_Input();
+    // var d = text.NTL_Input();
+    // var e = text.NTL_Input();
+    // var f = text.NTL_Input();
+    // var g = text.NTL_Input();
+    // var h = text.NTL_Input();
+    // var i = text.NTL_Input();
+
+
+    var canvas = new MIST_Canvas("<h2> Please inssert your details </h2><hr><br>");
+    var gui = new MIST_NTL_Widgets;
+    var guin = new MIST_Widgets;
+
+    var email = gui.NTL_Input(canvas.getHtmlId(), "Email");
+    MIST_Insert_Html(canvas.getHtmlId(), "<br><br>");
+    var pass = gui.NTL_Input(canvas.getHtmlId(), "Password");
+    MIST_Insert_Html(canvas.getHtmlId(), "<br><br><center>");
+    var btn = gui.NTL_Button(canvas.getHtmlId(), 'Submit', "check()");
+    MIST_Insert_Html(canvas.getHtmlId(), "<br><br>");
+
+    var style_btn = MIST_Style_Element(btn);
+    style_btn.height(40);
+    style_btn.marginLeft(70);
+
+
+
+    var placing = MIST_Style_Element(canvas.getHtmlId());
+    placing.marginLeft(450);
+    placing.marginTop(150);
+
+
+    function check(){
+        if (document.getElementById(email).value === "alok@shell"){
+            if (document.getElementById(pass).value === "123"){
+                var panel = MIST_Panel_Left("Log in Successfull", "0, 128, 0", 15, "hov");
+            const h = new MIST_Animation(document.getElementById('hov'));
+
+            h.pop(1000, function(){
+                h.fadeOut(1000, function(){
+                    h.fadeIn(1000, "");
+                });
+            });
+
+            setTimeout(function(){
+                document.getElementById("hov").innerHTML = "";
+            },2000)
+        }
+        else {
+            var panel = MIST_Panel_Left("Invalid password was entred", "200, 0, 0", 15, "hov");
+            const h = new MIST_Animation(document.getElementById('hov'));
+
+            h.pop(1000, function(){
+                h.fadeOut(1000, function(){
+                    h.fadeIn(1000, "");
+                });
+            });
+
+            setTimeout(function(){
+                document.getElementById("hov").innerHTML = "";
+            },2000)
+
+        }
+        }
+        else {
+            var panel = MIST_Panel_Left("Invalid email was entred", "200, 0, 0", 15, "hov");
+            const h = new MIST_Animation(document.getElementById('hov'));
+
+            h.pop(1000, function(){
+                h.fadeOut(1000, function(){
+                    h.fadeIn(1000, "");
+                });
+            });
+
+            setTimeout(function(){
+                document.getElementById("hov").innerHTML = "";
+            },2000)
+
+        }
+    }
+
+
+
+</script>
+</html>

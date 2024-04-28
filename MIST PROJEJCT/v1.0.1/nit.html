@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mist.min.css">
+</head>
+<body>
+    
+</body>
+<script src="mist.min.js"></script>
+<script>
+    // Creating a Panel
+const my_Panel = new MIST_Panel_Left("This is our nice looking Panel");// if text is written then MIST Will Ignore other arguments and set the as default
+
+// getting the root access
+/*
+getHtmlId() is a global parameter which can be used with any of the MIST Component which can be created
+
+- In our case we used Panel component which can be created means we can use getHtmlId() with Panel to get it's root access
+
+*/
+var my_Panel_root = my_Panel.getHtmlId();
+
+console.log(my_Panel_root);
+</script>
+</html>
