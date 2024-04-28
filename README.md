@@ -227,6 +227,94 @@ const elm = new MIST_Style_Element('ID of the element');
 // Adding styles to the element
 elm.height(70); // Setting the height
 elm.width(70); // Setting the width
-
+```
 
 # Widgets
+<b>MIST</b> provides widgets for creating high performing applications , Currently <b>MIST</b> provides normal and <code>NTL widgets</code>, you can access these by <code>MIST_Widgets</code> and <code>MIST_NTL_Widgets</code> classes.
+
+## MIST_Widgets (Class)
+<code>MIST_Widgets</code> provides standard <b>MIST Widgets</b> for creating the applications, These widgets are very standard and suitable for desktop standard applicaions. Current widget support :- 
+
+<code>MIST_Widget</code> supports <code>textbox(), input(), button()</code> <b>widgets</b>.
+
+## textbox(location, placeholder) (Method)
+<code>textbox()</code> asks for the location which is the id of the html element where the textbox will be created , and also it asks for place holder which is a default watermark placed inside the textbox (These parameters are optional but if you want customisations then use those also).
+
+<b>Example</b>
+
+```javascript
+// creating a widget
+const my_Widget = MIST_Widget;
+
+
+// creatng a textbox
+my_Widget.textbox(); // this will create a textbox , customisation my_Widget.textbox('html element id', 'Enter something...');
+```
+
+## input(location, placeholder) (Method)
+<code>input()</code> asks for the location which is the id of the html element where the input field will be created , and also it asks for place holder which is a default watermark placed inside the input field (These parameters are optional but if you want customisations then use those also).
+
+<b>Example</b>
+
+```javascript
+// creating a widget
+const my_Widget = MIST_Widget;
+
+
+// creatng a input field
+my_Widget.input(); // this will create a textbox , customisation my_Widget.input('html element id', 'Enter something...');
+```
+
+## button(location, placeholder, onclick) (Method)
+<code>button()</code> asks for the location which is the id of the html element where the button will be created , and also it asks for place holder which is the label placed inside the button and also it asks for onclick which is the javascript code for execution when button is clicked but this takes the javascript code in the string format (These parameters are optional but if you want customisations then use those also).
+
+<b>Example</b>
+
+```javascript
+// creating a widget
+const my_Widget = MIST_Widget;
+
+
+// creatng a button
+my_Widget.button(); // this will create a textbox , customisation my_Widget.button('html element id', 'my button', "alert('you clicked the button!!!')");
+```
+
+
+## MIST_NTL_Widgets (Class)
+<code>MIST_NTL_Widgets</code> are same as <code>MIST_Widgets</code> are but it was designed for developing mordern <b>GUI</b>. It proides same functions as <code>MIST_Widgets</code> provides just you need to include <code>NTL_</code> at the beggning of the method names.
+
+<b>Example</b>
+
+```javascript
+// creating a widget
+const my_Widget = MIST_NTL_Widget;
+
+
+// creatng a button
+my_Widget.NTL_button(); // this will create a textbox , customisation my_Widget.NTL_button('html element id', 'my button', "alert('you clicked the button!!!')");
+```
+
+
+## MIST_Load_From_File(path) (Function)
+<code>MIST_Load_From_File</code> takes the path of html file and then it will load the html file without reloading the <b>webpage</b>, the <b>path</b> could be the url of a <b>website</b> or the <b>Local html file</b>.
+
+<b>Example</b>
+```javascript
+// loading the file
+MIST_Load_From_File("path to the html file");// or MIST_Load_From_File("https://fozdtx.github.io/alvax/");
+```
+
+
+## MIST_Insert_Html(location, HTML) (Function)
+<code>MIST_Insert_Html</code> takes the location of the html element, This could be the html element id and then it asks for <b>HTML</b> which is going to be inserted in the html element. After this it will insert the html inside the given element.
+
+<b>Example</b>
+```javascript
+// Inserting the HTML
+MIST_Insert_Html("html element id", "<h1>Basic HTML which will be inserted</h1>");
+```
+
+
+
+
+# Congratulations - You have learned the MIST API VERSION 0.A.1.F (BETA TEST) , This framework will be updated soon and global version release will be arrive soon.
